@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package primitives;
+
+/**
+ * This class is my first go at a byte
+ */
+public class MyByteExample {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		byte myByteVariable = 1;
+		
+		System.out.println(myByteVariable);
+
+	}
+
+}

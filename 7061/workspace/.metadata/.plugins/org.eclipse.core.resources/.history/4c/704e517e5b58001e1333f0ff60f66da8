@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package primitives;
+
+/**
+ * This class is my first go at a byte
+ */
+public class MyByteExample {
+
+	/**
+	 * this method is going to create a byte and add a value to it
+	 * and print to screen
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// create a byte
+		byte myByte;
+		
+		// initialise the variable - assign a value
+		myByte = 21;
+		
+		// output to screen the value
+		System.out.println("This is the value myByte: " + myByte);
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

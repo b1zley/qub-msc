@@ -1,0 +1,29 @@
+package first;
+
+public class HelloWorld {
+	
+	HelloWorld(){
+		
+	}
+	
+	void helloFunction(int numberPrints) {
+		for(int i = 0 ; i< numberPrints ; i++) {
+			System.out.println("Hello World " + (i+1));
+		}
+	}
+	
+	
+
+	public static void main(String[] args) {
+//		HelloWorld helloWorldObject = new HelloWorld();
+//		
+//		helloWorldObject.helloFunction(10000);
+		
+		System.out.println("Hello World");
+		
+		double pi =  Math.PI;
+		System.out.println(pi);
+
+	}
+
+}

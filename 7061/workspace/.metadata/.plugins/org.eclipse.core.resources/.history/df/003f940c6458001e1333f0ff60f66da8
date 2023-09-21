@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package primitives;
+
+/**
+ * 
+ */
+public class MyStringExample {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String myString = "String";
+		
+		String anotherString = "String";
+		
+		
+		System.out.println("My name is " + myString);
+		
+//		System.out.printf("My name is %s", myString);
+		
+		
+		System.out.println(myString.length());
+
+	}
+
+}

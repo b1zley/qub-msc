@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package primitives;
+
+/**
+ * 
+ */
+public class MyOtherPrimitives {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		char myChar;
+		myChar = 'x';
+		
+		boolean myBoolean;
+		myBoolean = true;
+		
+		
+		System.out.println(myChar + " " + myBoolean);
+
+	}
+
+}

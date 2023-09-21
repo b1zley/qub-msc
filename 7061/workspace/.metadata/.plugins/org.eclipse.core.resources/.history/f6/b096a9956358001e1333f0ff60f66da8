@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package primitives;
+
+/**
+ * 
+ */
+public class MyStringExample {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String myString = "String";
+		
+		String anotherString = "String";
+		
+		
+		if (myString == anotherString) {
+			System.out.println("true");
+		}else {
+			System.out.println("false");
+		}
+
+	}
+
+}

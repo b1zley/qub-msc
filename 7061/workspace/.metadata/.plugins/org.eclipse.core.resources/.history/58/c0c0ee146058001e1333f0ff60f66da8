@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package primitives;
+
+/**
+ * 
+ */
+public class MyDoubleExample {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double myDouble;
+		myDouble = 1230;
+		
+		System.out.println(myDouble);
+		System.out.println("My  double");
+
+	}
+
+}
