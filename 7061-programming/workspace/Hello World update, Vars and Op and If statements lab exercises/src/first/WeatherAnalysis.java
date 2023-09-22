@@ -14,7 +14,7 @@ public class WeatherAnalysis {
 	/**
 	 * @param args
 	 */
-	
+	// this function sums all values in an ArrayList
 	static double sumTemperatures (ArrayList<Double> temperatures) {
 		double sum = 0;
 		
@@ -25,7 +25,7 @@ public class WeatherAnalysis {
 		
 		return sum;
 	}
-	
+	//this function finds the average of the values in an ArrayList
 	static double averageTemperatures (ArrayList<Double> temperatures) {
 		double numberOfEntries = temperatures.size();
 		
@@ -36,7 +36,7 @@ public class WeatherAnalysis {
 		return averageTemperature;
 	}
 	
-	
+	//this function counts the number of trues in an ArrayList
 	static int countSunnyDays(ArrayList<Boolean> sunBooleans) {
 		int sunnyDays = 0;
 		
@@ -50,12 +50,13 @@ public class WeatherAnalysis {
 		return sunnyDays;
 	}
 	
-	
+	// this function accepts the two ArrayLists described below, then carries out, and prints
+	//weather analysis
 	static void printWeatherAnalysis(
 				ArrayList<Double> temperatures ,
 				ArrayList<Boolean> sunBooleans) {
 		
-		
+		//runs functions to count sunny days and find average temperature
 		int sunnyDays = countSunnyDays(sunBooleans);
 		double averageTemperature = averageTemperatures(temperatures);
 		
@@ -70,6 +71,7 @@ public class WeatherAnalysis {
 			
 			System.out.println("Temp\t: " + tempOnDay);
 			System.out.println("Sun\t: " + sunOnDay);
+			
 			
 			if(tempOnDay > averageTemperature) {
 				System.out.println("Above average Temp");
@@ -89,7 +91,7 @@ public class WeatherAnalysis {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		
+		// declare and initialize relevant variables
 		double tempDay1, tempDay2, tempDay3, tempDay4, tempDay5;
 		boolean sunDay1, sunDay2, sunDay3, sunDay4, sunDay5;
 		
@@ -108,6 +110,8 @@ public class WeatherAnalysis {
 		tempDay5 = 17.0;
 		sunDay5 = false;
 		
+		//create ArrayList and add temperatures to it
+		
 		ArrayList<Double> temperatures = new ArrayList<Double>();
 		
 		temperatures.add(tempDay1);
@@ -116,7 +120,7 @@ public class WeatherAnalysis {
 		temperatures.add(tempDay4);
 		temperatures.add(tempDay5);
 		
-		
+		// create ArrayList and add sunBooleans to it
 		ArrayList<Boolean> sunBooleans = new ArrayList<Boolean>();
 		
 		sunBooleans.add(sunDay1);
@@ -126,7 +130,7 @@ public class WeatherAnalysis {
 		sunBooleans.add(sunDay5);
 		
 		
-		
+		// run print weather analysis
 		printWeatherAnalysis(temperatures, sunBooleans);
 		
 		
