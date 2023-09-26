@@ -32,6 +32,8 @@ public class ExerciseI {
 		} else {
 			System.out.println("You cannot vote");
 		}
+		
+		scanner.close();
 
 	}
 

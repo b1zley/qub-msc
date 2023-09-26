@@ -18,12 +18,16 @@ public class ExerciseII {
 	 */
 	public static void main(String[] args) {
 		
+		
+		String userInput, userName;
+		int userNumberCharactersLongName, userNameNumberCharacters;
+		
+		
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Please enter your name");
 		
-		String userInput, userName;
-		int userNumberCharactersLongName, userNameNumberCharacters;
+		
 		
 		userInput = scanner.nextLine();
 		userName = userInput;
@@ -40,6 +44,8 @@ public class ExerciseII {
 		} else {
 			System.out.println("You have a short name.");
 		}
+		
+		scanner.close();
 		
 		
 
