@@ -34,7 +34,7 @@ public class ExerciseIV {
 			}
 
 			switch (month) {
-
+			
 			case 9:
 			case 10:
 			case 11:

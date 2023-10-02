@@ -1,0 +1,43 @@
+Booking.com
+
+Destination
+	ID
+	Name
+	Desc
+	City
+	Country
+	POIs
+Rating
+	ID
+	Name
+Review
+	ID
+	Author
+	Review_Body
+	Score
+	Date
+	LengthStay
+	GuestNum
+	GuestType
+Profile
+	first_name
+	second_name
+	display_name
+	genderID
+Gender
+	ID
+	Name
+Activities(funThingsToDo)
+	ID
+	Name
+Cancellation_Policy
+	ID
+	Name
+	Desc
+
+Accom Type
+	ID
+	Name
+
+
+(Everything in drop down is an entity)
