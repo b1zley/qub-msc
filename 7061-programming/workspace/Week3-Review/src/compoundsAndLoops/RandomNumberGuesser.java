@@ -29,7 +29,7 @@ public class RandomNumberGuesser {
 
 		System.out.println("Generating number...");
 		try {
-			TimeUnit.SECONDS.sleep(2);
+			TimeUnit.SECONDS.sleep(1);
 		} catch (Exception e) {
 			System.out.println("uh oh");
 		}
@@ -38,7 +38,13 @@ public class RandomNumberGuesser {
 
 			System.out.println("o0o0o0o0o please guess a number between 1 and 10 - eg 6");
 			userInput = scanner.nextLine();
-			userGuess = Integer.valueOf(userInput);
+			try {
+				userGuess = Integer.valueOf(userInput);
+			} catch (Exception e) {
+				System.out.println("Please input a number!");
+				continue;
+			}
+
 			System.out.println("Your number is: " + userGuess);
 
 			System.out.println("Comparing numbers...");
@@ -58,7 +64,7 @@ public class RandomNumberGuesser {
 			}
 
 		}
-		
+
 		scanner.close();
 
 	}
