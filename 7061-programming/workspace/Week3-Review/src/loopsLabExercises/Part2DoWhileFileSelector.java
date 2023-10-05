@@ -28,28 +28,32 @@ public class Part2DoWhileFileSelector {
 			switch(userInput) {
 			case "1":
 				System.out.println("File selected...");
-				continue;
+				break;
 			case "2":
 				System.out.println("Editing file...");
-				continue;
+				break;
 			case "3":
 				System.out.println("Saving file...");
-				continue;
+				break;
 			case "4":
 				System.out.println("Deleting file...");
-				continue;
+				break;
 			case "5":
 				System.out.println("Exiting...");
 				break;
 			default:
 				System.out.println("Invalid selection!");
-				continue;
+				
 				
 			}
-			break;
 			
-		} while (true);
-
+		} while (!userInput.equals("5"));
+		
+		System.out.println("Exited program");
+		
+		scanner.close();
+		
+		
 	}
 
 }

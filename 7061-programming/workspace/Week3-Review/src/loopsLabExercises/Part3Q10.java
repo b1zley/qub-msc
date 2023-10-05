@@ -20,7 +20,9 @@ public class Part3Q10 {
 		// TODO Auto-generated method stub
 		String userInput;
 		int userAge;
-
+		
+		userAge = -1;
+		
 		Scanner scanner = new Scanner(System.in);
 
 		do {
@@ -32,7 +34,6 @@ public class Part3Q10 {
 				userAge = Integer.valueOf(userInput);
 			} catch (Exception e) {
 				System.out.println("Please input an integer! eg 1 - 120");
-				continue;
 			}
 			
 			if (userAge >= 1 && userAge <= 30) {
@@ -44,12 +45,10 @@ public class Part3Q10 {
 				
 			} else {
 				System.out.println("Hey now, no one is that age...");
-				continue;
 			}
 			
-			break;
 
-		} while (true);
+		} while (userAge < 1 || userAge > 120);
 
 	}
 
