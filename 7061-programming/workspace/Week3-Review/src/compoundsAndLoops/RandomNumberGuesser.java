@@ -9,11 +9,16 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * Random number guessser - user inputs a number and this is compared against a 
+ * randomly generated number
  * 
+ * iterates until user inputs number = random number
  */
 public class RandomNumberGuesser {
 
 	/**
+	 * 
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -58,6 +63,9 @@ public class RandomNumberGuesser {
 				System.out.println("My number is: " + generatedNumber);
 				System.out.println("oh my god you GOT ME");
 				break;
+			} else if (userGuess > 10 || userGuess < 1) {
+				System.out.println("Numbers 1 - 10 please!");
+				continue;
 			} else {
 				System.out.println("HA, you didn't get me this time!");
 				continue;
