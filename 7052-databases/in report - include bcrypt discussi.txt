@@ -1,0 +1,6 @@
+in report - include bcrypt discussion for external code...
+
+encryption should be handled at front end before payload is POST'd to backend (?)
+
+maybe this happens at backend - can't rembmer - check fullstackopen notes on encryption
+
