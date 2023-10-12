@@ -16,25 +16,34 @@ public class FirstMethod {
 	public static void main(String[] args) {
 
 		System.out.println("Start of main");
-		
-		
-		
-		printNameXTimes(3);
-		
+
 //		printName1000Times();
-		
-		
+
 //		calculateYearUserTurns100(28);
-		
+
+		printNameToScreenMultipleTimes("Tim", 5);
+
 		System.out.println("End of main");
 	} // end of main
 
+	/**
+	 * This method takes a name and an int as parameters, then prints the name to
+	 * screen the given number of times.
+	 * @param nameToPrint = string which will be printed
+	 * @param numberOfTimes = number of times given string will be printed
+	 */
+	public static void printNameToScreenMultipleTimes(String nameToPrint, int numberOfTimes) {
+		for (int i = 1; i <= numberOfTimes; i++) {
+			System.out.println(nameToPrint);
+		}
+	}
+
 	/*
-	 * invoke me method deals with... first invocation of method
-	 * prints "Ouch! That hurt..." 
+	 * invoke me method deals with... first invocation of method prints
+	 * "Ouch! That hurt..."
 	 */
 	public static void invokeMe() {
-		System.out.println("Ouch! That hurt..." );
+		System.out.println("Ouch! That hurt...");
 	}
 
 	/*
@@ -52,26 +61,26 @@ public class FirstMethod {
 			System.out.println("Josh");
 		}
 	}
-	
+
 	/*
 	 * prints user name 1000 times - josh
 	 */
-	public static void printName1000Times () {
-		for (int i = 1 ; i<= 1000 ; i++ ) {
+	public static void printName1000Times() {
+		for (int i = 1; i <= 1000; i++) {
 			System.out.println("Josh");
 		}
 	}
+
 	/*
 	 * calculates and prints year user turns 100
 	 */
-	public static void calculateYearUserTurns100 (int userAge) {
+	public static void calculateYearUserTurns100(int userAge) {
 		int remainingYears, currentYear, yearUserTurns100;
 		remainingYears = 100 - userAge;
 		currentYear = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);
 		yearUserTurns100 = currentYear + remainingYears;
-		
+
 		System.out.println(yearUserTurns100);
-		
-		
+
 	}
 }
