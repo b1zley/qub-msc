@@ -7,5 +7,9 @@
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+=======
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+>>>>>>> c6c71932790bd7edfcb3c80e040179388f6ebfd2
 </qualifiedTypeNameHistroy>
