@@ -133,6 +133,7 @@ public class Part2MethodsWithReturnTypes {
 
 		call = call.toUpperCase();
 
+		isCallHeads = false;
 		switch (call) {
 		case "HEADS":
 			isCallHeads = true;
@@ -146,7 +147,7 @@ public class Part2MethodsWithReturnTypes {
 		}
 
 		if (isCallValid) {
-			if (isCallHeads = isCoinHeads) {
+			if (isCallHeads == isCoinHeads) {
 				System.out.println("You got it!");
 			} else {
 				System.out.println("Not this time");
