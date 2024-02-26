@@ -19,6 +19,12 @@ public class AsciiConvertor {
 	 * 
 	 * @param args
 	 */
+
+	static final int SHOW_ASCII_TABLE = 1;
+	static final int CONVERT_CHARACTER_TO_ASCII = 2;
+	static final int CONVERT_STRING_TO_ASCII = 3;
+	static final int QUIT_PROGRAM = 4;
+
 	public static void main(String[] args) {
 
 		// variable for accepting an option from the user
@@ -28,18 +34,15 @@ public class AsciiConvertor {
 		Scanner sc = new Scanner(System.in);
 
 		// variables for selecting option from table
-		final int SHOW_ASCII_TABLE = 1;
-		final int CONVERT_CHARACTER_TO_ASCII = 2;
-		final int CONVERT_STRING_TO_ASCII = 3;
-		final int QUIT_PROGRAM = 4;
 
 		// do while loop which controls options
+
 		do {
 			// set userinputoption at the start of each loop
 			userInputOption = -1;
 			// prompt the user with list of options
 			userInputOption = doMenu(sc);
-			
+
 			switch (userInputOption) {
 			case SHOW_ASCII_TABLE:
 				// display ascii table
@@ -58,7 +61,8 @@ public class AsciiConvertor {
 				System.out.println("Exitting program...");
 				break;
 			default:
-
+				System.out.println("This input is not accepted dumb shit");
+				continue;
 			}
 
 		} while (userInputOption != QUIT_PROGRAM);
@@ -66,29 +70,30 @@ public class AsciiConvertor {
 		sc.close();
 
 	}
-	
+
 	/**
-	 * this method displays a list of options to the user from the ascii convertor menu
-	 * then accepts an integer from user input
-	 * this method then returns the accepted integer
-	 * @param sc - accepts an already instantiated instance of a scanner object 
-	 * rather than creating its own
+	 * this method displays a list of options to the user from the ascii convertor
+	 * menu then accepts an integer from user input this method then returns the
+	 * accepted integer
+	 * 
+	 * @param sc - accepts an already instantiated instance of a scanner object
+	 *           rather than creating its own
 	 * @return - returns an int indicating the user selection
 	 */
 
 	public static int doMenu(Scanner sc) {
 		int userSelection;
-		
+
 		System.out.println("ASCII Convertor Menu..........\n");
-		System.out.println("1. Show ASCII Table");
-		System.out.println("2. Convert a Character to ASCII");
-		System.out.println("3. Convert your name to ASCII");
-		System.out.println("4. Quit");
+		System.out.println(SHOW_ASCII_TABLE + ". Show ASCII Table");
+		System.out.println(CONVERT_CHARACTER_TO_ASCII + ". Convert a Character to ASCII");
+		System.out.println(CONVERT_STRING_TO_ASCII + ". Convert your name to ASCII");
+		System.out.println(QUIT_PROGRAM + ". Quit");
 		System.out.println("Enter a number and return");
-		
+
 		userSelection = sc.nextInt();
 		sc.nextLine();
-		
+
 		return userSelection;
 	}
 
